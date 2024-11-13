@@ -407,7 +407,7 @@ p {
   height: 123px;
   width: 123px;
   border-radius: 50%;
-  background: url("/pwa-with-vanilla-js-master/img/icon-andy.jpg");
+  background: url("/img/icon-andy.jpg");
   background-size: cover;
   margin: 0 auto;
 }
@@ -469,7 +469,7 @@ p {
   top: 0;
 }
 .bg-struct.bg-img {
-  background: url(../img/img-bg-1.jpg);
+  background: url("/img/img-bg-1.jpg");
   background-position: center;
   background-size: cover;
 }

@@ -36,5 +36,488 @@
   <title>Dev'Coffee PWA</title>
 </head>
 
+<body>
+  <div class="main-wrapper">
+    <div class="bg-struct bg-img"></div>
+    <div class="mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row mdl-scroll-spy-1">
+          <a href="index.html"><span class="mdl-layout-title">Andy Widianto</span></a>
+          <div class="mdl-layout-spacer"></div>
+          <ul class="nav mdl-navigation mdl-layout--large-screen-only">
+            <li>
+              <a class="mdl-navigation__link" data-scroll href="#body">about</a>
+            </li>
+            <li>
+              <a class="mdl-navigation__link" data-scroll href="#portfolio_sec">portfolio</a>
+            </li>
+            <li>
+              <a class="mdl-navigation__link" data-scroll href="#interest_sec">interest</a>
+            </li>
+            <li>
+              <a class="mdl-navigation__link" data-scroll href="#project_sec">project</a>
+            </li>
+            <li>
+              <a class="mdl-navigation__link" data-scroll href="#contact_sec">contact</a>
+            </li>
+          </ul>
+          <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon ver-more-btn">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+            data-mdl-for="demo-menu-lower-right">
+            <li class="mdl-menu__item">
+              <a href="https://drive.google.com/file/d/1J79L3laKdUfjyP44nHjJ6E50oFebs5if/view?usp=drivesdk"><i
+                  class="zmdi zmdi-download font-red pr-10"></i>Download
+                Resume</a>
+            </li>
+            <li class="mdl-menu__item">
+              <a href="mailto:ptprashanttripathi@outlook.com"><i class="zmdi zmdi-email-open font-green pr-10"></i>Drop
+                me an Mail</a>
+            </li>
+            <li class="mdl-menu__item">
+              <a href="https://t.me/ptprashanttripathi"><i class="zmdi zmdi-phone font-blue pr-10"></i>Telegram Me</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <div class="nicescroll-bar">
+          <div class="drawer-profile-wrap">
+            <div class="candidate-img-drawer mt-25 mb-20"></div>
+            <span class="candidate-name block mb-10 text-center">Andy Widianto</span>
+            <ul class="social-icons mb-30">
+              <li>
+                <a class="facebook-link" href="https://facebook.com/ptprashanttripathi">
+                  <i id="tt11" class="zmdi zmdi-facebook"></i>
+                  <div class="mdl-tooltip" data-mdl-for="tt11">facebook</div>
+                </a>
+              </li>
+              <li>
+                <a class="twitter-link" href="https://twitter.com/PtPrashant09">
+                  <i id="tt12" class="zmdi zmdi-twitter"></i>
+                  <div class="mdl-tooltip" data-mdl-for="tt12">twitter</div>
+                </a>
+              </li>
+              <li>
+                <a class="linkedin-link" href="https://www.linkedin.com/in/ptprashanttripathi/">
+                  <i id="tt13" class="zmdi zmdi-linkedin"></i>
+                  <div class="mdl-tooltip" data-mdl-for="tt13">linkedin</div>
+                </a>
+              </li>
+              <li>
+                <a class="github-link" href="https://github.com/PtPrashantTripathi">
+                  <i id="tt14" class="zmdi zmdi-github"></i>
+                  <div class="mdl-tooltip" data-mdl-for="tt14">github</div>
+                </a>
+              </li>
+              <li>
+                <a class="instagram-link" href="https://www.instagram.com/ptprashanttripathi/">
+                  <i id="tt15" class="zmdi zmdi-instagram"></i>
+                  <div class="mdl-tooltip" data-mdl-for="tt15">instagram</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mdl-scroll-spy-2">
+            <ul class="mdl-navigation">
+              <li>
+                <a class="mdl-navigation__link border-top-sep" data-scroll href="#body">
+                  <i class="zmdi zmdi-border-color pr-15"></i>
+                  <span class="font-capitalize">about</span>
+                </a>
+              </li>
+              <li>
+                <a class="mdl-navigation__link border-top-sep" data-scroll href="#portfolio_sec">
+                  <i class="zmdi zmdi-case pr-15"></i>
+                  <span class="font-capitalize">portfolio</span>
+                </a>
+              </li>
+              <li>
+                <a class="mdl-navigation__link border-top-sep" data-scroll href="#interest_sec">
+                  <i class="zmdi zmdi-coffee pr-15"></i>
+                  <span class="font-capitalize">interest</span>
+                </a>
+              </li>
+              <li>
+                <a class="mdl-navigation__link border-top-sep" data-scroll href="#project_sec">
+                  <i class="zmdi zmdi-code pr-15"></i>
+                  <span class="font-capitalize">projects</span>
+                </a>
+              </li>
+              <li>
+                <a class="mdl-navigation__link border-top-sep border-bottom-sep" data-scroll href="#contact_sec">
+                  <i class="zmdi zmdi-email pr-15"></i>
+                  <span class="font-capitalize">contact</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="drawer-footer mt-50 mb-30 text-center">
+            <p class="font-12 mt-10">Andy Widianto &copy; 2020.</p>
+          </div>
+        </div>
+      </div>
+      <div class="main-content relative">
+        <div class="container">
+          <section class="about-sec mt-180 mt-sm-120 mb-30">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="mdl-card mdl-shadow--2dp">
+                  <div class="row">
+                    <div class="col-md-5 col-xs-12 mb-30">
+                      <img class="candidate-img mb-35" src="img/icon-andy.jpg" />
+                      <ul class="social-icons">
+                        <li>
+                          <a class="facebook-link" href="https://facebook.com/ptprashant09">
+                            <i id="tt1" class="zmdi zmdi-facebook"></i>
+                            <div class="mdl-tooltip" data-mdl-for="tt1">
+                              facebook
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="twitter-link" href="https://twitter.com/PtPrashant09">
+                            <i id="tt2" class="zmdi zmdi-twitter"></i>
+                            <div class="mdl-tooltip" data-mdl-for="tt2">
+                              twitter
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="linkedin-link" href="https://www.linkedin.com/in/ptprashanttripathi/">
+                            <i id="tt3" class="zmdi zmdi-linkedin"></i>
+                            <div class="mdl-tooltip" data-mdl-for="tt3">
+                              linkedin
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="instagram-link" href="https://www.instagram.com/ptprashanttripathi/">
+                            <i id="tt5" class="zmdi zmdi-instagram"></i>
+                            <div class="mdl-tooltip" data-mdl-for="tt5">
+                              instagram
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="github-link" href="https://github.com/PtPrashantTripathi">
+                            <i id="tt4" class="zmdi zmdi-github"></i>
+                            <div class="mdl-tooltip" data-mdl-for="tt4">
+                              github
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-7 col-xs-12">
+                      <div class="info-wrap">
+                        <h1>Andy Widianto</h1>
+                        <h5 class="mt-20 font-grey">
+                          Developer • Math • Learner
+                        </h5>
+                        <div class="mt-30">
+                          <a id="download_cv"
+                            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect bg-green font-white mr-10"
+                            href="https://drive.google.com/file/d/1J79L3laKdUfjyP44nHjJ6E50oFebs5if/view?usp=drivesdk">download
+                            Resume</a>
+                          <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect bg-blue font-white"
+                            href="#contact_sec" data-scroll>contact</a>
+                        </div>
+                      </div>
+                      <ul class="profile-wrap mt-50">
+                        <li>
+                          <div class="profile-title">
+                            &#128104; &#8205; &#127891; Experience Level :
+                          </div>
+                          2+ years
+                        </li>
+                        <li>
+                          <div class="profile-title">
+                            💻 I’m currently watching
+                          </div>
+                          One piece 🚀
+                        </li>
+                        <li>
+                          <div class="profile-title">
+                            &#129513; Interested in :
+                          </div>
+                          Technology, Math, and Space
+                        </li>
+                        <li>
+                          <div class="profile-title">💡 Equipments :</div>
+                          Knowledge, python, C++, Javascript, PHP, and webdev
+                        </li>
+                        <li>
+                          <div class="profile-title"><i class="coffe zmdi zmdi-coffee"></i>Favorit Drink :</div>
+                          Coffee
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--/About Sec-->
+          <section id="portfolio_sec" class="profile-sec sec-pad-top-sm">
+            <h2 class="mb-30">what i do</h2>
+            <div class="row">
+              <div class="col-md-4 col-xs-12 mb-30">
+                <div class="mdl-card mdl-shadow--2dp text-center">
+                  <i class="zmdi zmdi-code font-blue profile-icon"></i>
+                  <h4 class="mb-15">Developer</h4>
+                  <p>
+                    "Selama tiga tahun terakhir, saya telah mendalami berbagai aspek pemrograman,
+                    dengan keahlian khusus dalam C++ dan PHP. Pengalaman ini telah membekali saya
+                    dengan kemampuan untuk merancang, mengembangkan, dan mengimplementasikan solusi
+                    perangkat lunak yang efisien dan handal. Selain itu, saya memiliki pemahaman
+                    yang mendalam tentang pengelolaan basis data menggunakan MySQL, yang memungkinkan
+                    saya untuk membangun aplikasi yang terintegrasi dengan data secara efektif.
+                    Selama berkarya, saya selalu aktif berkolaborasi dengan tim dalam berbagai proyek,
+                    sehingga saya terbiasa bekerja dalam lingkungan yang dinamis dan mampu beradaptasi dengan
+                    cepat terhadap perubahan kebutuhan."
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-12 mb-30">
+                <div class="mdl-card mdl-shadow--2dp text-center">
+                  <i class="zmdi zmdi-format-color-text font-green profile-icon"></i>
+                  <h4 class="mb-15">Math</h4>
+                  <p>
+                    "Matematika bukan hanya sekadar angka dan rumus bagi saya, tetapi juga sebuah alat yang sangat
+                    berguna dalam kehidupan sehari-hari.
+                    Kemampuan saya dalam memecahkan masalah matematika telah membantu saya dalam berbagai situasi, baik
+                    dalam konteks akademik maupun dalam kehidupan pribadi.
+                    Keahlian saya dalam aljabar, misalnya, telah saya terapkan dalam menyelesaikan soal-soal fisika,
+                    kimia, dan bahkan dalam menganalisis data.
+                    Saya sangat menikmati proses pemecahan masalah matematika, karena setiap masalah yang terpecahkan
+                    memberikan kepuasan tersendiri dan mendorong saya untuk terus belajar lebih banyak."
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-12 mb-30">
+                <div class="mdl-card mdl-shadow--2dp text-center">
+                  <i class="zmdi zmdi-book font-yellow profile-icon"></i>
+                  <h4 class="mb-15">Learner</h4>
+                  <p>
+                    Saya terus belajar dan berkembang di bidang saya. Saya bersemangat menciptakan solusi inovatif dan
+                    menggunakan teknologi untuk memecahkan masalah dunia nyata.
+                    Saya memiliki dasar yang kuat dalam bahasa pemrograman seperti Java dan Python, dan saya selalu
+                    bersemangat untuk mengembangkan keahlian saya dan menghadapi
+                    tantangan baru. Baik saya mengerjakan proyek solo atau berkolaborasi dengan tim, saya berkembang
+                    dalam lingkungan yang serba cepat dan dinamis. Saya bersemangat
+                    untuk melanjutkan karir saya sebagai pengembang dan memberikan dampak positif di industri teknologi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="interest_sec" class="interest-sec sec-pad-top-sm">
+            <h2 class="mb-30">interests</h2>
+            <div class="row">
+              <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+                <div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
+                  <i class="zmdi zmdi-tv"></i>
+                  <span>movie</span>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+                <div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
+                  <i class="zmdi zmdi-radio"></i>
+                  <span>music</span>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+                <div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
+                  <i class="zmdi zmdi-smartphone"></i>
+                  <span>gaming</span>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+                <div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
+                  <i class="zmdi zmdi-run"></i>
+                  <span>Workout</span>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+                <div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
+                  <i class="zmdi zmdi-library"></i>
+                  <span>reading</span>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+                <div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
+                  <i class="zmdi zmdi-code"></i>
+                  <span>coding</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="project_sec" class="blog-sec sec-pad-top-sm">
+            <h2 class="mb-30">Message</h2>
+            <section class="contact-sec mt-10 mt-sm-120 mb-30">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="mdl-card mdl-shadow--2dp">
+                    <div class="mb-10 input-massage">
+                      <label for="exampleFormControlInput1" class="form-label">Nama </label>
+                      <input type="text" class="form-control" id="name" placeholder="masukan nama">
+                    </div>
+                    <div class="mb-10 input-massage">
+                      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-lg button-message" id="contact">Kirim</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="contact_sec" class="contact-sec sec-pad-top-sm">
+            <h2 class="mb-35">contact</h2>
+            <div class="row">
+              <div id="form_card_height" class="col-sm-12 mb-30">
+                <div class="mdl-card mdl-shadow--2dp text-center">
+                  <h4 class="mb-10 font-unsetcase">Find me on.</h4>
+                  <ul class="social-icons mt-10">
+                    <li>
+                      <a class="facebook-link" href="https://facebook.com/ptprashant09">
+                        <i id="tt6" class="zmdi zmdi-facebook" tabindex="0"></i>
+                        <div class="mdl-tooltip" data-mdl-for="tt6" data-upgraded="MaterialTooltip"
+                          style="left: 332px; margin-left: -34px; top: 545px">
+                          facebook
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="twitter-link" href="https://twitter.com/PtPrashant09">
+                        <i id="tt7" class="zmdi zmdi-twitter" tabindex="0"></i>
+                        <div class="mdl-tooltip" data-mdl-for="tt7" data-upgraded="MaterialTooltip" style="
+                            left: 270.533px;
+                            margin-left: -26.5px;
+                            top: 568px;
+                          ">
+                          twitter
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="linkedin-link" href="https://www.linkedin.com/in/ptprashanttripathi/">
+                        <i id="tt8" class="zmdi zmdi-linkedin" tabindex="0"></i>
+                        <div class="mdl-tooltip" data-mdl-for="tt8" data-upgraded="MaterialTooltip" style="
+                            left: 332px;
+                            margin-left: -30.5px;
+                            top: 568px;
+                          ">
+                          linkedin
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="youtube-link" href="https://www.youtube.com/channel/UCqvHCmcCjWQ57lWmfDj2ZMg">
+                        <i id="tt10" class="zmdi zmdi-youtube-play" tabindex="0"></i>
+                        <div class="mdl-tooltip" data-mdl-for="tt10" data-upgraded="MaterialTooltip" style="
+                            left: 454.933px;
+                            margin-left: -35px;
+                            top: 568px;
+                          ">
+                          youtube
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="reddit-link" href="https://www.reddit.com/user/PtPrashantTripathi">
+                        <i id="tt10" class="zmdi zmdi-reddit" tabindex="0"></i>
+                        <div class="mdl-tooltip" data-mdl-for="tt10" data-upgraded="MaterialTooltip" style="
+                            left: 454.933px;
+                            margin-left: -35px;
+                            top: 568px;
+                          ">
+                          reddit
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="instagram-link" href="https://www.instagram.com/ptprashanttripathi/">
+                        <i id="tt10" class="zmdi zmdi-instagram" tabindex="0"></i>
+                        <div class="mdl-tooltip" data-mdl-for="tt10" data-upgraded="MaterialTooltip" style="
+                            left: 454.933px;
+                            margin-left: -35px;
+                            top: 568px;
+                          ">
+                          instagram
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="github-link" href="https://www.github.com/ptprashanttripathi/">
+                        <i id="tt9" class="zmdi zmdi-github" tabindex="0"></i>
+                        <div class="mdl-tooltip" data-mdl-for="tt9" data-upgraded="MaterialTooltip" style="
+                            left: 393.467px;
+                            margin-left: -30px;
+                            top: 568px;
+                          ">
+                          github
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <footer class="footer-sec sec-pad-top-sm sec-pad-bottom text-center">
+            <h4>thank you for visiting.</h4>
+            <p class="mt-10">
+              Andy Widianto © 2024 All rights reserved.
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(registration => {
+            console.log('Service Worker registered:', registration);
+          })
+          .catch(error => {
+            console.error('Service Worker registration failed:', error);
+          });
+      });
+    }
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered');
+
+          return registration.pushManager.getSubscription();
+        })
+        .then(subscription => {
+          if (subscription) {
+            // Kirim endpoint subscription ke server
+            console.log('Endpoint subscription:', subscription.endpoint);
+          } else {
+            return registration.pushManager.subscribe({
+              userVisibleOnly: true,
+              applicationServerKey: urlBase64ToUint8Array(publicKey) // public key dari server
+            })
+              .then(function (newSubscription) {
+                // Kirim endpoint subscription ke server
+                console.log('Endpoint subscription:', newSubscription.endpoint);
+              });
+          }
+        });
+    }
+  </script>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="js/repo.js"></script>
+</body>
 
 </html>
